@@ -1,0 +1,247 @@
+body {
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(128, 0, 128, 0.6);
+}
+
+button {
+  background-color: transparent;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.todo-parent-container {
+  background-color: rgba(128, 0, 128, 0.4);
+  width: 100%;
+  max-width: 30rem;
+  border-radius: 10px;
+}
+
+.main-container {
+  width: 100%;
+  padding: 2%;
+  height: 40rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.todo-list-text {
+  color: #fff;
+  margin: 10px 0;
+}
+
+.task-one-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1%s;
+}
+
+.second-task-container {
+  width: 100%;
+  padding: 1% 10px;
+  margin: 1%;
+  background-color: purple;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.number-container-content {
+  color: #fff;
+  font-size: 20px;
+}
+
+.individual-task h2 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.input-container {
+  width: 100%;
+  max-width: 28.3rem;
+  bottom: 10px;
+  background-color: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-right: 5px;
+  padding-left: 10px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+input {
+  height: 100%;
+  padding: 1% 20px;
+  width: 100%;
+  background-color: #ccc;
+  border: 1px solid transparent;
+  outline: none;
+  color: #000;
+  font-size: 20px;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 20px;
+  color: #000;
+}
+
+input:-ms-input-placeholder {
+  font-size: 20px;
+  color: #000;
+}
+
+input::-ms-input-placeholder {
+  font-size: 20px;
+  color: #000;
+}
+
+input::placeholder {
+  font-size: 20px;
+  color: #000;
+}
+
+.second-task-container p {
+  color: #fff;
+}
+
+.main-parent-container {
+  width: 100%;
+}
+
+.fa-trash-o {
+  color: #fff;
+  font-size: 30px;
+  fill: #fff;
+}
+
+.edit-delete-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 4rem;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.add-task-container {
+  width: 3rem;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.add-task-container:hover {
+  cursor: pointer;
+}
+
+.delete-container {
+  width: 100%;
+  max-width: 4rem;
+  height: 2.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 3px;
+  border-radius: 100px;
+}
+
+.delete-container:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.edit-container a:hover {
+  text-decoration: underline;
+  color: #ccc;
+}
+
+.task-container {
+  list-style-type: none;
+}
+
+.parent-main-container {
+  height: 31rem;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.parent-main-container::-webkit-scrollbar {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
