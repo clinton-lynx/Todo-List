@@ -22,7 +22,8 @@ var taskElTwelve = document.createElement('button')
 
 
 
-AddBtn.onclick = () =>{
+AddBtn.onclick = (e) =>{
+    e.preventDefault()
     if(InputValue.value.trim() == ""){
         alert("Please input a task")
     }else{
@@ -71,7 +72,7 @@ AddBtn.onclick = () =>{
         
         //localstorage
         localStorage.setItem('task',taskWrapper.innerHTML) 
-
+        
     }
 
 }
@@ -82,7 +83,9 @@ taskWrapper.innerHTML = localStorage.getItem('task')
 
 taskWrapper.addEventListener('click', function (e) {
     if (e.target.className === 'delete-container') {
-      console.log(e.target.parentElement.parentElement.parentElement.remove());  
+        console.log(e.target.parentElement.parentElement.parentElement.remove());  
+        localStorage.clear();
+        localStorage.setItem('task',taskWrapper.innerHTML) 
       taskId = 0
     }else if(e.target.className === 'edit-btn'){
         InputValue.value =  e.target.parentElement.parentElement.previousElementSibling.firstChild.innerHTML
